@@ -32,7 +32,6 @@ def submit():
 
     return f"Your information has been hashed with the following key: {hex_hash_key}"
 
-
 @app.route('/search_hash', methods=['POST'])
 def search_hash():
     hash_key = request.form['hash_key']

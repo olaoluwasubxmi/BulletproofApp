@@ -2,13 +2,13 @@ import hashlib
 
 def get_input_data(hash_key):
     # Read the hashes from the file
-    with open('hashes.txt', 'r') as f:
+    with open('hash.txt', 'r') as f:
         hashes = f.read().splitlines()
 
     # Check if the hash exists in the file
     if hash_key in hashes:
         # Find the line that matches the hash
-        with open('hashes.txt', 'r') as f:
+        with open('hash.txt', 'r') as f:
             for line in f:
                 if hash_key in line:
                     # Extract the input data from the line
