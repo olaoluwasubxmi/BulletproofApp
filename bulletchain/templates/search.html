@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bullet Chain - Search</title>
+  </head>
+  <body>
+    <h1>Bullet Chain - Search</h1>
+    <form action="{{ url_for('search') }}" method="POST">
+      <fieldset>
+        <legend>Search by Block Hash:</legend>
+        <label for="block_hash">Block Hash:</label>
+        <input type="text" id="block_hash" name="block_hash"><br><br>
+        <input type="submit" value="Search">
+      </fieldset>
+    </form>
+  </body>
+</html>
